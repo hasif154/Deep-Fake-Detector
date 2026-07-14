@@ -1,0 +1,11 @@
+# config.yaml
+# Core settings for deepfake detection system
+experiment_name: "base_experiment"
+random_seed: 42
+
+# Top-level directory paths
+# Paths are resolved relative to the project root in the config parser
+paths:
+  dataset_root: "datasets"
+  models_root: "models"
+  outputs_root: "outputs"

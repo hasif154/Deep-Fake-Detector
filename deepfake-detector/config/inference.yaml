@@ -1,0 +1,8 @@
+# inference.yaml
+# Configuration for predicting deepfake status on image/video
+inference:
+  # Threshold for binary decision boundary
+  threshold: 0.5
+  
+  # Batch size during video frame processing for inference
+  batch_size: 16

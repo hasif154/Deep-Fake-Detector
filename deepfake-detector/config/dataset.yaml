@@ -1,0 +1,26 @@
+# dataset.yaml
+# Configuration for video processing and face dataset creation
+preprocessing:
+  # Supported video file extensions
+  supported_extensions:
+    - ".mp4"
+    - ".avi"
+    - ".mov"
+    - ".mkv"
+  
+  # Frequency of frame extraction (extract 1 frame out of every frame_skip frames)
+  frame_skip: 10
+  
+  # Minimum size threshold of the face relative to the frame (width/height ratio min)
+  min_face_size: 30 # pixels
+  
+  # Padding percentage added to the face bounding box before cropping (e.g. 0.15 = 15%)
+  crop_padding: 0.15
+  
+  # Target width and height to resize the cropped face
+  target_size:
+    width: 224
+    height: 224
+  
+  # Min confidence score for MediaPipe face detection (0.0 to 1.0)
+  min_detection_confidence: 0.5
